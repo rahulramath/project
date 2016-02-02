@@ -4,8 +4,8 @@
 
 
 body {
-  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
-  color: #404040;
+  font: 13px/20px 'Helvetica', Helvetica, Helvetica, sans-serif;
+  color: #ffffff;
   background: #0ca3d2;
 }
 
@@ -19,8 +19,8 @@ body {
   margin: 0 auto;
   padding: 20px 20px 20px;
   width: 310px;
-  background: white;
-  border-radius: 3px;
+  background: black;
+  border-radius: 2px;
   @include box-shadow(0 0 200px rgba(white, .5), 0 1px 2px rgba(black, .3));
 
   &:before {
@@ -35,7 +35,7 @@ body {
   h1 {
     margin: -20px -20px 21px;
     line-height: 40px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     color: #555;
     text-align: center;
@@ -109,7 +109,7 @@ display: inline;
  
 </style>
 input {
-  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-family: 'Helvetica', Helvetica, Helvetica, sans-serif;
   font-size: 14px;
 }
 
