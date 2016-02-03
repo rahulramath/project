@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
   padding: 20px 20px 20px;
   width: 310px;
-  background: white;
+  background: black;
   border-radius: 2px;
   @include box-shadow(0 0 200px rgba(white, .5), 0 1px 2px rgba(black, .3));
 
