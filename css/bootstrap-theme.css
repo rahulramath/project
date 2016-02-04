@@ -83,6 +83,7 @@ fieldset[disabled] .btn-danger {
   background-color: #e0e0e0;
   border-color: #dbdbdb;
 }
+
 .btn-default.disabled,
 .btn-default[disabled],
 fieldset[disabled] .btn-default,
