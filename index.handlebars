@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+ <html lang="en"> <!--<![endif]-->
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Stay Focused</title>
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+  <section class="container">
+
+  <div class="login" id="loginDiv">
+    <!--<div id="share-buttons">  
+    
+    <a href="https://bufferapp.com/add?url=https://simplesharebuttons.com&amp;text=Simple Share Buttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/buffer.png" alt="Buffer" />
+    </a>
+    <a href="http://www.youtube.com/" target="_blank">
+        <img src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png" alt="Facebook" />
+    </a>
+
+    <a href="https://plus.google.com/share?url=https://simplesharebutt ons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+    </a>
+    
+    <a href="http://www.linkedin.com/shareArticle?mini =true&amp;url=https://simplesharebuttons.com" target="_blank">
+        <img src="http://icons.iconarchive.com/icons/danleech/simple/1024/soundcloud-icon.png" alt="Soundcloud" />
+    </a>
+
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+    </a>
+
+    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+        <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+    </a>
+    </div>-->
+
+  {{#each accounts}}
+      <p>{{login}}</p>
+      <p>{{password}}</p>
+      <p>{{workblock}}</p>
+      <p>{{breakblock}}</p>
+      <p>{{blockcount}}</p>
+  {{/each}}
+
+    <h1 class = "abc">FIXATE</h1>
+    <h1 class = "abc">The app to get $#!t done</h1>
+    <form method="post" action="homepage.html">
+      <p><input type="text" name="login" value="" placeholder="Username or Email"></p>
+      <p><input type="password" name="password" value="" placeholder="Password"></p>
+      <p class="remember_me">
+        <label>
+          <input type="checkbox" name="remember_me" id="remember_me">
+          Remember me on this computer
+        </label>
+      </p>
+      <!--slider code-->
+      <!--<input type="range" min="0" max="500" value="0" step="1" onchange="showValue(this.value)" />-->
+		<!--<span id="range">0</span>-->
+
+      <p class="submit"><input type="submit" name="commit" value="Login"></p>
+      <p class="submit"><input type="submit" name="commit" value="New User"></p>
+    </form>
+  </div>
+    <div class="login-help">
+      <p>Forgot your password? <a href="index.html">Click here to reset it</a>.</p>
+    </div>
+  </section>
+</body>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script type="text/javascript">
+
+  (function(){
+    var loginDiv = document.getElementById("loginDiv");
+    var original = $("#loginDiv").clone();
+
+    var show = function(){
+      $('#loginDiv').html('<img src="images/splashscreen.gif" width="100%" height="100%">');
+     // myDiv.style.display = "block";
+      setTimeout(hide, 2000);  // 5 seconds
+    }
+
+    var hide = function(){
+      $('#loginDiv').replaceWith(original);
+    }
+
+    show();
+  })();
+
+</script>
+
+</html>

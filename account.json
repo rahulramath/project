@@ -1,0 +1,39 @@
+{
+	"accounts": [
+		{
+			"login": "default",
+			"password": "test",
+			"workblock": "30",			
+			"breakblock": "5",
+			"blockcount": "3"
+		},
+		{
+			"login": "austin",
+			"password": "austin",
+			"workblock": "10",			
+			"breakblock": "10",
+			"blockcount": "1"
+		},
+		{
+			"login": "alisa",
+			"password": "alisa",
+			"workblock": "50",			
+			"breakblock": "0",
+			"blockcount": "10"
+		},
+		{
+			"login": "diana",
+			"password": "diana",
+			"workblock": "25",			
+			"breakblock": "7",
+			"blockcount": "4"
+		},
+		{
+			"login": "rahul",
+			"password": "rahul",
+			"workblock": "45",			
+			"breakblock": "2",
+			"blockcount": "9"
+		}
+	]
+}

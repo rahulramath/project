@@ -18,33 +18,39 @@
   <section class="container">
 
   <div class="login" id="loginDiv">
-    <div id="share-buttons">  
+    <!--<div id="share-buttons">  
     
-    <!-- Buffer -->
     <a href="https://bufferapp.com/add?url=https://simplesharebuttons.com&amp;text=Simple Share Buttons" target="_blank">
         <img src="https://simplesharebuttons.com/images/somacro/buffer.png" alt="Buffer" />
     </a>
     <a href="http://www.youtube.com/" target="_blank">
         <img src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png" alt="Facebook" />
     </a>
-    <!-- Google+ -->
+
     <a href="https://plus.google.com/share?url=https://simplesharebutt ons.com" target="_blank">
         <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
     </a>
     
-    <!-- Soundcloud -->
     <a href="http://www.linkedin.com/shareArticle?mini =true&amp;url=https://simplesharebuttons.com" target="_blank">
         <img src="http://icons.iconarchive.com/icons/danleech/simple/1024/soundcloud-icon.png" alt="Soundcloud" />
     </a>
-        <!-- LinkedIn -->
+
     <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
         <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
     </a>
-    <!-- Pinterest -->
+
     <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
         <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
     </a>
-    </div>
+    </div>-->
+
+  {{#each accounts}}
+      <p>{{login}}</p>
+      <p>{{password}}</p>
+      <p>{{workblock}}</p>
+      <p>{{breakblock}}</p>
+      <p>{{blockcount}}</p>
+  {{/each}}
 
     <h1 class = "abc">STAY FOCUSED</h1>
     <h1 class = "abc">The app to get $#!t done</h1>
